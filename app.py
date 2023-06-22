@@ -3,8 +3,8 @@ import streamlit as st
 from transformers import BertTokenizer, BertForMaskedLM
 import torch
 
-model = BertForMaskedLM.from_pretrained('pytorch_model.bin')
-tokenizer = BertTokenizer.from_pretrained('lyrics_train')
+model = BertForMaskedLM.from_pretrained('PUSH/lyrics_train')
+tokenizer = BertTokenizer.from_pretrained('PUSH/lyrics_train')
 
 
 def main():
