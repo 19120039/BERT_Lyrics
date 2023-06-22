@@ -10,6 +10,12 @@ tokenizer = BertTokenizer.from_pretrained('PUSH/lyrics_train')
 def main():
     st.title("Song Lyrics Generator")
 
+    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown("**Author**: Phan Minh Triết - 19120039")
+    st.markdown("**Author**: Trần Đức Thụy - 19120138")
+
+    st.text('Please enter your seed text below, and wait a moment to generate lyrics.')
+    
     seed_text = st.text_area("Enter Seed Text", value="I love you", height=100)
 
     if st.button("Generate Lyrics"):
